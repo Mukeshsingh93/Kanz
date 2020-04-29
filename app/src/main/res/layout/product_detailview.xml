@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.example.myapplication.productdetail.ProductDetailViewModel" />
+    </data>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="@dimen/five"
+        android:visibility="gone"
+        android:background="@color/yellow">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/twoenty"
+            android:layout_marginStart="@dimen/twoenty"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="@dimen/ten">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="@dimen/leftarrowheight"
+            android:layout_height="@dimen/leftarrowheight"
+            android:src="@drawable/leftarrow"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/toolbartop"
+            android:layout_marginStart="@dimen/ten"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/productdetail"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/five"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsizetitle"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:paddingStart="@dimen/twoenty"
+        android:paddingEnd="@dimen/twoenty"
+        android:orientation="vertical"
+        android:background="@drawable/round_drawable"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="@dimen/twoenty"
+        android:elevation="0dp">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="0dp"
+        android:layout_marginTop="@dimen/ten"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.viewpager.widget.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/sliderDots"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/twoenty"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+  <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+      android:fontFamily="@font/comfortaa_medium"
+      android:textColor="@color/textblack"
+            android:textSize="@dimen/textsize_sixtn"
+            />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{viewModel.offerProducts.description}"
+        android:textSize="@dimen/textsize_sixtn"
+        android:fontFamily="@font/comfortaa_medium"
+        android:layout_marginTop="@dimen/ten"
+        />
+
+</LinearLayout>
+</LinearLayout>
+</layout>

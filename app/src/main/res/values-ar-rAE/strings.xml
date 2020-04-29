@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">  كنز </string>  <!--     -->
+    <string name="username"> الاس</string>  <!--     الاسم    -->
+    <string name="mobilenumber"> رقم التليفون </string>  <!--     رقم التليفون    -->
+    <string name="email">  الايميل </string> <!--     الايميل    -->
+    <string name="password">كلمه السر</string>
+    <string name="termcondition"> الاحكام و الشروط</string> <!--     الاحكام و الشروط    -->
+    <string name="signup"> تسجيل </string> <!--     تسجيل    -->
+    <string name="winnernew">  الفائز </string>  <!--     الفائز     -->
+    <string name="congratulation">  تهانينا</string>  <!--     تهانينا    -->
+    <string name="seedetail"> التفاصيل </string> <!--     التفاصيل    -->
+    <string name="getachancetowin"> احرص على فرصه للفوز </string>  <!--     احرص على فرصه للفوز    -->
+    <string name="verification"> تاكيد</string>  <!--     تاكيد    -->
+    <string name="sentyoucode"> لقد ارسلنا اليك كود لتفعيل رقم حسابك</string>  <!--     لقد ارسلنا اليك كود لتفعيل رقم حسابك    -->
+    <string name="verifycontinue"> تأكيد واستمرار  </string>  <!--     تأكيد واستمرار    -->
+    <string name="nointernet"> لا يوجد انترنت</string>  <!--     لا يوجد انترنت    -->
+    <string name="addtocart">  إضافة إلي العربه  </string>  <!--     إضافة إلي العربه    -->
+    <string name="forgetpassword">  نسيت كلمة السر</string>  <!--     نسيت كلمة السر    -->
+    <string name="typeemailid"> ادخل ايميلك هنا</string>  <!--     ادخل ايميلك هنا    -->
+    <string name="enteremailpassword"> ادخل ايميلك وسنرسل لك رساله لتغيير كلمة السر</string> <!--     ادخل ايميلك وسنرسل لك رساله لتغيير كلمة السر     -->
+    <string name="submit"> حفظ</string> <!--     حفظ    -->
+    <string name="confirmpassword"> تأكيد كلمة السر</string> <!--     تأكيد كلمة السر    -->
+    <string name="contactus">تواصل معن</string> <!--     تواصل معنا    -->
+    <string name="typecodehere"> أدخل الكود</string> <!--     أدخل الكود     -->
+    <string name="typenewpass">  ادخل كلمة سر جديدة</string> <!--     ادخل كلمة سر جديدة    -->
+    <string name="confirmpasswordcap"> تأكيد كلمة السر</string> <!--     تأكيد كلمة السر    -->
+    <string name="totalproducts">  العدد الكلي المنتجات</string> <!--     العدد الكلي المنتجات    -->
+    <string name="totalticket">  العدد الكلي للتذاكر </string> <!--     العدد الكلي للتذاكر    -->
+    <string name="donateaddil"> تبرع لتحصل على كوبونات اكثر</string> <!--     تبرع لتحصل على كوبونات اكثر    -->
+    <string name="iaggree"> انا اوافق على التبرع لهذه الجمعيه طبقا للشروط و الاحكام </string> <!--     انا اوافق على التبرع لهذه الجمعيه طبقا للشروط و الاحكام    -->
+    <string name="apply">تطبيق</string>
+    <string name="applycoupon"> أدخل الكود</string> <!--     أدخل الكود    -->
+    <string name="proceedtopayment">  ادفع الان</string> <!--     ادفع الان    -->
+    <string name="grantotal" > المبلغ الكلي </string> <!--     المبلغ الكلي    -->
+    <string name="inclusiveoftax">  شامل 5 في المئة ضريبة</string> <!--     شامل 5 في المئة ضريبة    -->
+    <string name="firstname">  الاسم الأول </string>  <!--     الاسم الأول    -->
+    <string name="lastname"> الاسم الاخير</string> <!--     الاسم الاخير    -->
+    <string name="phoneno"> رقم التليفون </string> <!--     رقم التليفون    -->
+    <string name="message">  الرسالة</string> <!--     الرسالة    -->
+    <string name="fullname">  الاسم الكلي</string> <!--     الاسم الكلي    -->
+    <string name="emailreq"> الايميل مطلوب إدخاله</string> <!--     الايميل مطلوب إدخاله    -->
+    <string name="emailnotvalid">الايميل غير صحي</string> <!--     الايميل غير صحيح    -->
+    <string name="pinreq">  الكود مطلوب</string> <!--     الكود مطلوب    -->
+    <string name="usernamereq"> الاسم مطلوب</string> <!--     الاسم مطلوب    -->
+    <string name="mobilenoreq"> رقم الفون مطلوب</string> <!--     رقم الفون مطلوب    -->
+    <string name="passreq">  كلمة السر مطلوب </string> <!--     كلمة السر مطلوب    -->
+    <string name="passlengthreq"> كلمة السر لا تقل عن 8 حروف </string> <!--     كلمة السر لا تقل عن 8 حروف    -->
+    <string name="wrongotp">لقد ادخلت كود خط</string> <!--     لقد ادخلت كود خطأ    -->
+    <string name="codereq">  الكود مطلوب  </string>  <!--     الكود مطلوب    -->
+    <string name="fullnamereq">  الإسم بالكامل مطلوب</string> <!--     الإسم بالكامل مطلوب    -->
+    <string name="phonenoreq"> رقم التليفون مطلوب </string> <!--     رقم التليفون مطلوب    -->
+    <string name="messagereq"> الرسالة مطلوبة </string> <!--     الرسالة مطلوبة    -->
+    <string name="address" translatable="false"> العنوان</string> <!--    العنوان   -->
+    <string name="phonenocap" translatable="false">  رقم الفون</string> <!--    رقم الفون   -->
+    <string name="porfile" translatable="false">   حسابي </string> <!--    حسابي   -->
+    <string name="productname" translatable="false"> اسم المنتج</string> <!--    اسم المنتج   -->
+    <string name="description" > الوصف</string>  <!--    الوصف   -->
+    <string name="price" translatable="false"> السعر </string> <!--    السعر   -->
+    <string name="promocode" translatable="false"> البرومو كود مطلوب </string>  <!--    البرومو كود مطلوب   -->
+    <string name="cart" translatable="false">العربه</string>  <!--    العربه   -->
+    <string name="wishlist" >  المفضله </string>  <!--    المفضله   -->
+    <string name="product" translatable="false"> المنتج </string> <!--    المنتج   -->
+    <string name="faq" translatable="false"> اللغه الشائعه </string>  <!--    اللغه الشائعه   -->
+    <string name="arabic"> اللغه </string>  <!--    اللغه   -->
+    <string name="phonno">  الايميل او رقم الفون</string>  <!--    الايميل او رقم الفون   -->
+    <string name="pin">  رقم ال</string> <!--    رقم ال PIN   -->
+    <string name="dontaccount"> ليس لدي حساب </string>   <!--    ليس لدي حساب   -->
+    <string name="outof">  الكميه الكليه </string> <!--    الكميه الكليه   -->
+    <string name="soldcap">بيعت </string> <!--    بيعت   -->
+    <string name="productdetail"> تفاصيل المنتج </string> <!--    تفاصيل المنتج   -->
+    <string name="pricedetail"> تفاصيل الجائزه</string> <!--    تفاصيل الجائزه   -->
+    <string name="pricecap"> السعر  </string> <!--    السعر   -->
+    <string name="capignclosongsoon">  العروض القادمه </string> <!--    العروض القادمه   -->
+    <string name="explorcampign"> تفقد حسابي </string> <!--    تفقد حسابي   -->
+    <string name="profile">حسابي </string><!--    حسابي   -->
+    <string name="language">  اللغه </string><!--    اللغه   -->
+    <string name="howitworks"> كيف تعمل </string> <!--   كيف تعمل    -->
+    <string name="logout"> خروج </string> <!--    خروج   -->
+    <string name="login">دخول  </string> <!--     -->
+    <string name="totalprice">السعر الكلي</string> <!--     -->
+    <string name="ticket">الكوبون </string> <!--     -->
+    <string name="noiteminwishlist">لا يوجد في المفضله</string> <!--     -->
+    <string name="noitemincart">لا يوجد في العربه</string> <!--     -->
+    <string name="order"> طلب </string> <!--     -->
+    <string name="offerdetail">تفاصيل العرض</string> <!--     -->
+    <string name="earlybirdactive">Early Bird offer is active</string> <!--     -->
+    <string name="signin" >دخول  </string> <!--     -->
+    <string name="unitprice"> سعر الوحده</string> <!--     -->
+    <string name="noiteminticket">لا يوجد عنصر في التذكرة</string>
+    <string name="aed">درهم‎</string>
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="itemtotal" >Item total</string>
+</resources>

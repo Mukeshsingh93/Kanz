@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/profilelayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginEnd="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profilescreenheight">
+
+            <ImageView
+                android:id="@+id/profileimg"
+                android:layout_width="@dimen/profilescreenheight"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:padding="@dimen/fifteen"
+                app:srcCompat="@drawable/useryellow"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile"
+                android:textSize="@dimen/textsize_fourtn"
+                android:fontFamily="@font/comfortaa_medium"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_toEndOf="@+id/profileimg"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/mywhishlistlayout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginEnd="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            app:layout_constraintTop_toBottomOf="@+id/profilelayout"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profilescreenheight">
+            <ImageView
+                android:id="@+id/whishlistimg"
+                android:layout_width="@dimen/profilescreenheight"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:padding="@dimen/fifteen"
+                android:src="@drawable/star_yellow_fill"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wishlist"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="@dimen/textsize_fourtn"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_toEndOf="@+id/whishlistimg"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/languagelayout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginEnd="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            app:layout_constraintTop_toBottomOf="@+id/mywhishlistlayout"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profilescreenheight">
+            <ImageView
+                android:id="@+id/languageimg"
+                android:layout_width="@dimen/profilescreenheight"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:padding="@dimen/fifteen"
+                android:src="@drawable/language"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/language"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="@dimen/textsize_fourtn"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_toEndOf="@+id/languageimg"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/orderlayout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginEnd="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            app:layout_constraintTop_toBottomOf="@+id/languagelayout"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profilescreenheight">
+
+            <ImageView
+                android:id="@+id/changepasswordimg"
+                android:layout_width="@dimen/profilescreenheight"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:padding="@dimen/fifteen"
+                android:src="@drawable/order"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="@dimen/textsize_fourtn"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_toEndOf="@+id/changepasswordimg"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/howitworkslayout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginEnd="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            app:layout_constraintTop_toBottomOf="@+id/orderlayout"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profilescreenheight">
+
+
+
+            <ImageView
+                android:id="@+id/howitworkslayoutimg"
+                android:layout_width="@dimen/profilescreenheight"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:padding="@dimen/fifteen"
+                android:src="@drawable/faq"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/howitworks"
+                android:textSize="@dimen/textsize_fourtn"
+                android:fontFamily="@font/comfortaa_medium"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_toEndOf="@+id/howitworkslayoutimg"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contactuslayout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginEnd="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            app:layout_constraintTop_toBottomOf="@+id/howitworkslayout"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profilescreenheight">
+
+            <ImageView
+                android:id="@+id/contactuslayoutimg"
+                android:layout_width="@dimen/profilescreenheight"
+                android:layout_height="match_parent"
+                android:src="@drawable/contactus"
+                android:padding="@dimen/fifteen"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contactus"
+                android:textSize="@dimen/textsize_fourtn"
+                android:fontFamily="@font/comfortaa_medium"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_toEndOf="@+id/contactuslayoutimg"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/faqlayout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginEnd="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            app:layout_constraintTop_toBottomOf="@+id/contactuslayout"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profilescreenheight">
+
+            <ImageView
+                android:id="@+id/faqlayoutimg"
+                android:layout_width="@dimen/profilescreenheight"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:padding="@dimen/fifteen"
+                android:src="@drawable/faqtxt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faq"
+                android:textSize="@dimen/textsize_fourtn"
+                android:fontFamily="@font/comfortaa_medium"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_toEndOf="@+id/faqlayoutimg"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+       <!-- <RelativeLayout
+            android:id="@+id/bankdetaillayout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginEnd="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            android:visibility="gone"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profilescreenheight">
+
+            <ImageView
+                android:id="@+id/bankdetailimg"
+                android:layout_width="@dimen/profilescreenheight"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Details"
+                android:layout_marginStart="@dimen/ten"
+                android:textSize="@dimen/textsize_fourtn"
+                android:layout_toEndOf="@+id/bankdetailimg"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>-->
+
+
+       <RelativeLayout
+            android:id="@+id/logoutlayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profilescreenheight"
+           android:layout_marginStart="@dimen/ten"
+            android:layout_marginTop="8dp"
+           android:layout_marginEnd="@dimen/ten"
+           android:background="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/faqlayout">
+
+            <ImageView
+                android:id="@+id/logoutimg"
+                android:layout_width="@dimen/profilescreenheight"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:padding="@dimen/fifteen"
+                android:src="@drawable/logout"/>
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_toEndOf="@+id/logoutimg"
+                android:text="@string/logout"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="@dimen/textsize_fourtn" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_arrow" />
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

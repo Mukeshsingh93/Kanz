@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#f9cb42</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="wh">#D81B60</color>
+    <color name="yellow">#f9cb42</color>
+    <color name="grey">#EEEEEE</color>
+    <color name="circlegrey">#9E9E9E</color>
+    <color name="orange">#e94c3d</color>
+    <color name="textblack">#2e2d30</color>
+    <color name="snackbarcolor">#FF0000</color>
+    <color name="toast">#FF5722</color>
+</resources>

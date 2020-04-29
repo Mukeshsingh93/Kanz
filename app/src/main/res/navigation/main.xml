@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main"
+    app:startDestination="@id/FAQView">
+
+
+
+    <fragment
+        android:id="@+id/loginView"
+        android:name="com.example.myapplication.loginview.LoginView"
+        android:label="LoginView" >
+
+        <action
+            android:id="@+id/action_loginView_to_registerView"
+            app:destination="@id/registerView" />
+        <action
+            android:id="@+id/action_loginView_to_forgetPasswordView"
+            app:destination="@id/forgetPasswordView" />
+        <action
+            android:id="@+id/action_loginView_to_homeView"
+            app:destination="@id/homeView" />
+
+    </fragment>
+
+   <!-- <fragment
+        android:id="@+id/homeView"
+        android:name="com.example.myapplication.homeview.HomeView"
+        android:label="HomeView" >
+
+        <action
+            android:id="@+id/action_homeView_to_verificationView"
+            app:destination="@id/verificationView" />
+
+        <action
+            android:id="@+id/action_homeView_to_loginView"
+            app:destination="@id/loginView" />
+        <action
+            android:id="@+id/action_homeView_to_addtoCartScreen"
+            app:destination="@id/addtoCartScreen" />
+
+    </fragment>-->
+
+
+
+
+    <fragment
+        android:id="@+id/addtoCartScreen"
+        android:name="com.example.myapplication.addToCart.AddtoCartScreen"
+        android:label="AddtoCartScreen" />
+    <fragment
+        android:id="@+id/confirmpasswordView"
+        android:name="com.example.myapplication.confirmpassword.ConfirmpasswordView"
+        android:label="ConfirmpasswordView" />
+    <fragment
+        android:id="@+id/FAQView"
+        android:name="com.example.myapplication.faqView.FAQView"
+        android:label="FAQView" />
+    <fragment
+        android:id="@+id/contactusView"
+        android:name="com.example.myapplication.contactus.ContactusView"
+        android:label="ContactusView" />
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.example.myapplication.webview.WebViewFragment"
+        android:label="WebViewFragment" />
+
+    <fragment
+        android:id="@+id/whishListView"
+        android:name="com.example.myapplication.wishlist.WishlistView"
+        android:label="WhishListView" />
+    <fragment
+        android:id="@+id/productView"
+        android:name="com.example.myapplication.product.ProductView"
+        android:label="ProductView" />
+    <fragment
+        android:id="@+id/profileView"
+        android:name="com.example.myapplication.profile.ProfileView"
+        android:label="ProfileView" />
+    <fragment
+        android:id="@+id/orderView"
+        android:name="com.example.myapplication.order.OrderView"
+        android:label="OrderView" />
+
+    <fragment
+        android:id="@+id/productDetailView"
+        android:name="com.example.myapplication.productdetail.ProductDetailView"
+        android:label="ProductDetailView">
+
+        <argument android:name="productDetail"
+            app:argType="com.example.myapplication.network.OfferProducts"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/allproductDetailView"
+        android:name="com.example.myapplication.allproductdetail.AllProductDetailView"
+        android:label="ProductDetailView">
+
+        <argument android:name="productDetail"
+            app:argType="com.example.myapplication.network.Product"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/offerDetailView"
+        android:name="com.example.myapplication.offerdetail.OfferDetailView"
+        android:label="ProductDetailView">
+
+        <argument android:name="offerDetail"
+            app:argType="com.example.myapplication.network.Offers"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+
+    </fragment>
+
+</navigation>

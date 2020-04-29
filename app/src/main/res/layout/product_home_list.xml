@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable name="offer"
+                type="com.example.myapplication.network.Offers"
+                />
+        <variable name="index" type="int" />
+
+        <variable
+            name="clickListener"
+            type="com.example.myapplication.homeview.CampainsListAdapter.OnClickListener" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="135dp"
+        >
+
+<!--
+        android:onClick="@{() -> clickListener.onClick(offer,index)}"
+-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="100dp"
+        android:layout_margin="@dimen/five"
+        android:background="@drawable/homeproductlist"
+        android:layout_marginBottom="@dimen/twoenty"
+            android:layout_height="125dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/ten"
+                app:imageFromUrl="@{offer.image}"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/getachancetowin"
+                android:textSize="@dimen/textsize_eight"
+                android:fontFamily="@font/comfortaa_medium"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                />
+
+        <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{offer.name}"
+        android:layout_gravity="center"
+            android:maxLines="1"
+            android:fontFamily="@font/comfortaa_medium"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textStyle="bold"
+        android:textSize="@dimen/textsize_eight"
+        android:textColor="@android:color/black"
+        />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{offer.description}"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginEnd="@dimen/ten"
+            android:maxLines="2"
+            android:fontFamily="@font/comfortaa_medium"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_eight"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="@dimen/twoenty"
+            android:layout_marginEnd="@dimen/twoenty"
+            android:layout_marginTop="@dimen/five"
+            android:background="@color/yellow"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+</layout>

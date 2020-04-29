@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:elevation="@dimen/five"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/yellow">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="@dimen/backarrowheight"
+            android:layout_height="@dimen/backarrowheight"
+            android:src="@drawable/back_arrow"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/ten"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/faq"
+            android:layout_gravity="center"
+            android:fontFamily="@font/comfortaa_medium"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/twoenty"
+            android:layout_marginStart="@dimen/twoenty"
+            />
+        </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"/>
+
+</LinearLayout>

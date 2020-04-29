@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/homeView">
+
+    <fragment
+        android:id="@+id/homeView"
+        android:name="com.example.myapplication.homeview.HomeView"
+        android:label="HomeView" >
+
+        <action
+            android:id="@+id/action_homeView_to_mainActivity"
+            app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/action_homeView_to_activity_Login"
+            app:destination="@id/activity_Login" />
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/productview"
+        android:name="com.example.myapplication.product.ProductView"
+        android:label="HomeView" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/profiletab"
+        android:name="net.simplifiedcoding.ProfileTab"
+        android:label="HomeView">
+        <action
+            android:id="@+id/action_profiletab_to_profileView"
+            app:destination="@id/profileView" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileView"
+        android:name="com.example.myapplication.profile.ProfileView"
+        android:label="HomeView">
+    </fragment>
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.myapplication.util.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main">
+
+        <argument android:name="viewType"
+            android:defaultValue="productDetail"
+            app:argType="string"/>
+
+    </activity>
+
+    <activity
+        android:id="@+id/activity_Login"
+        android:name="com.example.myapplication.Activity_Login"
+        android:label="Activity_Login" />
+
+    <fragment
+        android:id="@+id/ticketview"
+        android:name="com.example.myapplication.ticketlist.TicketListView"
+        android:label="TicketListView" />
+
+
+</navigation>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="textsize_etn">18sp</dimen>
+    <dimen name="textsize_ten">10sp</dimen>
+    <dimen name="textsize_eight">8sp</dimen>
+    <dimen name="textsize_twl">12sp</dimen>
+    <dimen name="textsize_sixtn">16sp</dimen>
+    <dimen name="textsize_fourtn">14sp</dimen>
+    <dimen name="textsize_twoenty">20sp</dimen>
+    <dimen name="textsize_twoentytwo">22sp</dimen>
+    <dimen name="textsize_twoentysix">26sp</dimen>
+    <dimen name="textsize_thirty">30sp</dimen>
+
+    <dimen name="thirtytwo">32dp</dimen>
+
+    <dimen name="five">5dp</dimen>
+    <dimen name="ten">10dp</dimen>
+    <dimen name="fifteen">15dp</dimen>
+    <dimen name="twoenty">20dp</dimen>
+    <dimen name="thirty">30dp</dimen>
+        <dimen name="fourty">40dp</dimen>
+        <dimen name="otpwidth">50dp</dimen>
+        <dimen name="otpheight">70dp</dimen>
+    <dimen name="navigationimgsize">20dp</dimen>
+    <dimen name="navigationimgsizetop">13dp</dimen>
+    <dimen name="halffive">2.5dp</dimen>
+    <dimen name="_100sdp">20dp</dimen>
+    <dimen name="_200sdp">200dp</dimen>
+    <dimen name="_50sdp">50dp</dimen>
+    <dimen name="_30sdp">30dp</dimen>
+    <dimen name="_120sdp">120dp</dimen>
+    <dimen name="_20ssp">25sp</dimen>
+    <dimen name="fourtyfive">45dp</dimen>
+    <dimen name="profilescreenheight">60dp</dimen>
+    <dimen name="buttonheight">50dp</dimen>
+    <dimen name="fifty">50dp</dimen>
+    <dimen name="sixty">60dp</dimen>
+    <dimen name="leftarrowheight">36dp</dimen>
+    <dimen name="backarrowheight">26dp</dimen>
+    <dimen name="textsizetitle">18sp</dimen>
+    <dimen name="toolbartop">2dp</dimen>
+    <dimen name="fiftyfive">55dp</dimen>
+    <dimen name="fiftytwo">52dp</dimen>
+    <dimen name="fiftyone">51dp</dimen>
+    <dimen name="fiftythree">53dp</dimen>
+    <dimen name="toastsize">20dp</dimen>
+</resources>

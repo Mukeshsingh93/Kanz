@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/language_bg"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/english"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/yellow"
+        app:cardCornerRadius="@dimen/five"
+        android:layout_marginStart="@dimen/fourtyfive"
+        android:layout_marginEnd="@dimen/fourtyfive"
+        android:layout_marginTop="@dimen/twoenty"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="English"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_twl"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/arabic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/yellow"
+        app:cardCornerRadius="@dimen/five"
+        android:layout_marginStart="@dimen/fourtyfive"
+        android:layout_marginEnd="@dimen/fourtyfive"
+        android:layout_marginTop="@dimen/twoenty"
+        android:layout_marginBottom="@dimen/twoenty">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/arabic"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_twl"
+            />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

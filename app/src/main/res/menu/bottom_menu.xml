@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/homeView"
+            android:title="@string/home"
+            android:icon="@drawable/ic_home"
+    />
+
+    <item
+            android:id="@+id/productview"
+            android:title="@string/product"
+            android:icon="@drawable/product"
+    />
+
+    <item
+        android:id="@+id/ticketview"
+        android:title="@string/ticket"
+        android:icon="@drawable/ticket"
+        />
+
+    <item
+            android:id="@+id/profiletab"
+            android:title="@string/profile"
+            android:icon="@drawable/user"
+        />
+
+
+
+</menu>

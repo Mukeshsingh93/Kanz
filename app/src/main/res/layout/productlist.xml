@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable name="viewmodel"
+            type="com.example.myapplication.network.Product"
+            />
+
+        <variable
+            name="clickListener"
+            type="com.example.myapplication.product.OnClick" />
+        <variable name="index" type="int" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginStart="@dimen/ten"
+        android:layout_marginEnd="@dimen/ten"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/ten"
+        android:onClick="@{() -> clickListener.onClick(viewmodel,index)}"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:layout_margin="@dimen/ten"
+            android:background="@drawable/yellow_rect"
+            app:cardCornerRadius="@dimen/five">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:padding="@dimen/ten"
+                app:bindImageUrl="@{viewmodel.Images.get(0).image}"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/fifteen"
+            android:layout_marginBottom="@dimen/ten">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/productname"
+                    android:fontFamily="@font/comfortaa_medium"
+                   android:visibility="gone"
+                    android:textSize="@dimen/textsize_twl"
+                    android:layout_gravity="center"
+                    android:textColor="@color/yellow"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{viewmodel.name}"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/comfortaa_medium"
+                    android:textSize="@dimen/textsize_fourtn"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:maxLines="2"
+                    android:text="@string/price"
+                    android:fontFamily="@font/comfortaa_medium"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize_twl"
+                    android:textColor="@color/yellow"
+                    android:layout_gravity="center"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{@string/aed +viewmodel.price_per_unit}"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize_twl"
+                    android:fontFamily="@font/comfortaa_medium"
+                    android:textColor="@color/textblack"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textSize="@dimen/textsize_twl"
+                    android:fontFamily="@font/comfortaa_medium"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:textColor="@color/yellow"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{viewmodel.description}"
+                    android:maxLines="4"
+                    android:fontFamily="@font/comfortaa_medium"
+                    android:textSize="@dimen/textsize_twl"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

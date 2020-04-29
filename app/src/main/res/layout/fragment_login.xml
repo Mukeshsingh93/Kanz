@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.example.myapplication.loginview.LoginViewModel" />
+    </data>
+<LinearLayout
+    android:id="@+id/toplayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/fourty"
+        android:visibility="invisible"
+        />
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/signin"
+      android:layout_marginStart="@dimen/thirty"
+      android:layout_marginTop="@dimen/five"
+      android:fontFamily="@font/comfortaa_medium"
+      android:textColor="@android:color/black"
+      android:textSize="@dimen/textsize_twoentytwo"
+      />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/fourty"
+        android:paddingStart="@dimen/fourty"
+        android:paddingEnd="@dimen/fourty"
+        android:orientation="vertical"
+        android:background="@drawable/round_drawable"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourty"
+            app:layout_constraintTop_toTopOf="parent"
+            android:clipChildren="false"
+            app:errorEnabled="true"
+
+
+            android:showDividers="end">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:hint="@string/phonno"
+                android:textSize="@dimen/textsize_sixtn"
+                android:text="@{viewModel.email}"
+                android:onTextChanged="@{viewModel.onTextChangedEmail}"
+                android:fontFamily="@font/comfortaa_medium"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="@dimen/ten"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pintext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            android:drawablePadding="@dimen/ten"
+            app:layout_constraintTop_toTopOf="parent"
+            android:clipChildren="false"
+            android:showDividers="end">
+
+            <EditText
+                android:id="@+id/pin"
+                android:layout_width="match_parent"
+                android:hint="@string/password"
+                android:drawablePadding="@dimen/ten"
+                android:text="@{viewModel.pin}"
+                android:fontFamily="@font/comfortaa_medium"
+                android:inputType="textPassword"
+                android:onTextChanged="@{viewModel.onTextChangedPin}"
+                android:textSize="@dimen/textsize_fourtn"
+                android:drawableLeft="@drawable/lock"
+                android:singleLine="true"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonheight"
+            android:layout_marginStart="@dimen/twoenty"
+            android:layout_marginEnd="@dimen/twoenty"
+            android:layout_marginTop="@dimen/ten"
+            android:onClick="@{()-> viewModel.signin()}"
+            app:cardBackgroundColor="@color/yellow">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signin"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textColor="@color/textblack"
+                android:textSize="@dimen/textsize_fourtn"
+                android:layout_gravity="center"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/accepttermcondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintHorizontal_weight="1"
+                android:text="Remember me"
+                android:textSize="@dimen/textsize_fourtn"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgetpassword"
+                android:textSize="@dimen/textsize_fourtn"
+                android:fontFamily="@font/comfortaa_medium"
+                android:padding="@dimen/ten"
+                android:onClick="@{()-> viewModel.forgetPassword()}"
+                android:textColor="@color/yellow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/thirty">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@android:color/black"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@android:color/black"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/twoenty"
+            android:visibility="gone"
+            android:layout_height="@dimen/thirty">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/google"/>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="@dimen/ten"
+                    android:layout_marginEnd="@dimen/ten"
+                    android:src="@drawable/facebook"/>
+
+                <ImageView
+                    android:layout_width="@dimen/thirtytwo"
+                    android:layout_height="@dimen/thirtytwo"
+                    android:src="@drawable/instagram"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twoenty">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_medium"
+                    android:text="@string/dontaccount"
+                    android:textSize="@dimen/textsize_fourtn" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/signupbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signup"
+                    android:padding="@dimen/five"
+                    android:fontFamily="@font/comfortaa_medium"
+                    android:textSize="@dimen/textsize_fourtn"
+                    android:onClick="@{()-> viewModel.register()}"
+                    android:textColor="@color/yellow"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/infoToastWithFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Custom Typeface"
+            android:visibility="gone"
+            android:onClick="showInfoToastWithTypeface" />
+
+    </LinearLayout>
+</LinearLayout>
+</layout>

@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Kanz</string>  <!--        -->
+    <string name="username">NAME</string>  <!--         -->
+    <string name="mobilenumber">MOBILE NUMBER</string>
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="termcondition" translatable="false"><![CDATA[I read and agree term & conditions]]></string>
+    <string name="signup" translatable="false">Sign up</string>
+    <string name="winnernew" translatable="false">Winner of all new \nMercedes-Benz EQA</string>
+    <string name="congratulation" translatable="false">Congratulations</string>
+    <string name="seedetail" translatable="false">See details</string>
+    <string name="getachancetowin" translatable="false">Get a chance to WIN.</string>
+    <string name="sentyoucode" translatable="false">We sent you a \ncode to verify your Phone no</string>
+    <string name="verification" translatable="false">Verification</string>
+
+    <string name="verifycontinue" translatable="false">Verify and continue</string>
+    <string name="nointernet" translatable="false">No internet Connection</string>
+    <string name="addtocart" translatable="false">Add to cart</string>
+    <string name="forgetpassword" translatable="false">Forget Password</string>
+    <string name="typeemailid" translatable="false">TYPE YOUR EMAIL ID HERE !</string>
+    <string name="enteremailpassword" translatable="false">Enter Your Email Above And We Will Send SMS To Reset You Password</string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="confirmpassword" translatable="false">Confirm your password</string>
+    <string name="contactus" translatable="false">Contact us</string>
+    <string name="typecodehere" translatable="false">TYPE YOUR RECEIVED CODE</string>
+    <string name="typenewpass" translatable="false">TYPE NEW PASSWORD</string>
+    <string name="confirmpasswordcap" translatable="false">CONFIRM PASSWORD</string>
+    <string name="totalproducts" translatable="false">Total Products </string>
+    <string name="totalticket" translatable="false">Total Tickets </string>
+    <string name="donateaddil" translatable="false">Donate to receive an additional entry!</string>
+    <string name="iaggree" translatable="false">I agree to donate all purchased products to chairty as per the Terms an conditions</string>
+    <string name="apply" translatable="false">Apply</string>
+    <string name="applycoupon" translatable="false">Apply Coupon</string>
+    <string name="proceedtopayment" translatable="false">Proceed to Payment</string>
+    <string name="grantotal" translatable="false">Grand Total</string>
+    <string name="inclusiveoftax" translatable="false">Inclusive of 5% VAT</string>
+    <string name="firstname" translatable="false">First Name</string>
+    <string name="lastname" translatable="false">Last Name</string>
+    <string name="phoneno" translatable="false">Phone no</string>
+    <string name="message" translatable="false">Message</string>
+    <string name="fullname" translatable="false">Full Name</string>
+    <string name="emailreq" translatable="false">The email field is required.</string>
+    <string name="emailnotvalid" translatable="false">The Email address is not valid.</string>
+    <string name="pinreq" translatable="false">The pin field is required.</string>
+    <string name="usernamereq">The username field is required.</string>
+    <string name="mobilenoreq">The mobile no field is required.</string>
+    <string name="passreq">The password field is required.</string>
+    <string name="passlengthreq">The password is minimum 6 character is required.</string>
+    <string name="wrongotp">You have entered wrong otp.</string>
+    <string name="codereq">The code field is required.</string>
+    <string name="fullnamereq">The full name is required.</string>
+    <string name="phonenoreq">The phone no field is required.</string>
+    <string name="messagereq">The message is required.</string>
+    <string name="address" >ADDRESS</string>
+    <string name="phonenocap" >PHONE NO</string>
+    <string name="porfile">Profile</string>
+    <string name="productname" >Product Name</string>
+    <string name="description" >Description</string>
+    <string name="price" >Price</string>
+    <string name="promocode">The promo code field is required.</string>
+    <string name="cart">Cart</string>
+    <string name="wishlist">WishList</string>
+    <string name="product">Product</string>
+    <string name="faq">Faq</string>
+    <string name="itemtotal" >Item total</string>
+    <string name="sold" translatable="false">Sold</string>
+    <string name="arabic">Arabic</string>
+    <string name="signin" >Sign in</string>
+    <string name="phonno">Email / Phone no</string>
+    <string name="pin">PIN</string>
+    <string name="dontaccount">Don\'t Have An Account?</string>
+    <string name="earlybirdactive">Early Bird offer is active</string>
+    <string name="outof">OUT OF</string>
+    <string name="soldcap">SOLD</string>
+    <string name="productdetail">Product Detail</string>
+    <string name="pricedetail">Prize Detail</string>
+    <string name="pricecap">PRICE</string>
+    <string name="capignclosongsoon">Campains Closing Soon</string>
+    <string name="explorcampign">Explore Campaigns</string>
+    <string name="profile">Profile</string>
+    <string name="language">Language</string>
+    <string name="howitworks">How it works</string>
+    <string name="logout">Log Out</string>
+    <string name="login">Log In</string>
+    <string name="totalprice">Total price</string>
+    <string name="ticket">Ticket</string>
+    <string name="noiteminwishlist">No Item in WishList</string>
+    <string name="noiteminticket">No Item in Ticket</string>
+    <string name="noitemincart">No Item in Cart</string>
+    <string name="order">Order</string>
+    <string name="offerdetail">Offer Detail</string>
+    <string name="unitprice">Unit price</string>
+    <string name="aed">AED</string>
+    <string name="home">Home</string>
+    <string name="aboutus">About us</string>
+</resources>

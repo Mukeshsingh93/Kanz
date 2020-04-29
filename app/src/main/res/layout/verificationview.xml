@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.example.myapplication.verification.VerificationViewModel" />
+    </data>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/yellow"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backarrow"
+            android:layout_width="@dimen/leftarrowheight"
+            android:layout_height="@dimen/leftarrowheight"
+            android:src="@drawable/leftarrow"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/ten"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verification"
+            android:textSize="@dimen/textsize_twoentytwo"
+            android:fontFamily="@font/comfortaa_medium"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            />
+
+    </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/verificationview"
+            android:layout_marginTop="@dimen/fourty">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="80dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/otpwidth"
+                    android:layout_height="@dimen/otpheight"
+                    android:background="@drawable/otpleftround">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edittextone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:maxLength="1"
+                        android:inputType="number"
+                        android:text="@{viewModel.editTextOne}"
+                        android:onTextChanged="@{viewModel.onTextChangedEditTextOne}"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:textColorHint="@android:color/white"
+                        android:textStyle="bold"
+                        android:textColor="@color/textblack"
+                        android:layout_centerInParent="true"
+                        android:textSize="46sp"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/otpwidth"
+                    android:layout_height="@dimen/otpheight"
+                    android:layout_marginStart="@dimen/twoenty"
+                    android:background="@drawable/otprightround">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edittexttwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@{viewModel.editTextTwo}"
+                        android:onTextChanged="@{viewModel.onTextChangedEditTextTwo}"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@color/textblack"
+                        android:layout_centerInParent="true"
+                        android:textSize="46sp"
+                        />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/otpwidth"
+                    android:layout_height="@dimen/otpheight"
+                    android:layout_marginStart="@dimen/twoenty"
+                    android:background="@drawable/otpleftround">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edittextthree"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:textStyle="bold"
+                        android:text="@{viewModel.editTextThree}"
+                        android:onTextChanged="@{viewModel.onTextChangedEditTextThree}"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@color/textblack"
+                        android:layout_centerInParent="true"
+                        android:textSize="46sp"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/otpwidth"
+                    android:layout_height="@dimen/otpheight"
+                    android:layout_marginStart="@dimen/twoenty"
+                    android:background="@drawable/otprightround">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edittextfour"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:textStyle="bold"
+                        android:text="@{viewModel.editTextFour}"
+                        android:onTextChanged="@{viewModel.onTextChangedEditTextFour}"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:maxLength="1"
+                        android:textColor="@color/textblack"
+                        android:layout_centerInParent="true"
+                        android:textSize="46sp"
+                        />
+               </RelativeLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sentyoucode"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="@dimen/textsize_sixtn"
+                android:textColor="@color/textblack"
+                android:layout_marginTop="@dimen/thirty"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonheight"
+                android:layout_marginStart="@dimen/fourty"
+                android:layout_marginEnd="@dimen/fourty"
+                android:elevation="5dp"
+                app:cardCornerRadius="@dimen/five"
+                android:onClick="@{()-> viewModel.checkOtp()}"
+                android:layout_marginTop="@dimen/fourty"
+                app:cardBackgroundColor="@color/yellow"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/verifycontinue"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/comfortaa_medium"
+                    android:textSize="@dimen/textsize_sixtn"
+                    android:textColor="@android:color/black"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
+</layout>

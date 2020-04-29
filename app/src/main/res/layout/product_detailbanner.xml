@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <ImageView
+        android:id="@+id/advertisementImg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/thirty"
+        android:scaleType="fitXY"
+        >
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/ten"
+        android:layout_marginBottom="@dimen/twoenty"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/winnernew"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsize_twoentytwo"
+            android:textColor="@android:color/white"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/congratulation"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsize_fourtn"
+            android:textColor="@android:color/white"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            app:cardBackgroundColor="@color/yellow"
+            android:layout_marginTop="@dimen/ten"
+            app:cardCornerRadius="16dp"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seedetail"
+                android:layout_gravity="center"
+                android:textSize="@dimen/textsize_twl"
+                android:textColor="@color/textblack"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+    <!--   <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@drawable/viewpager"/>-->
+
+</androidx.cardview.widget.CardView>

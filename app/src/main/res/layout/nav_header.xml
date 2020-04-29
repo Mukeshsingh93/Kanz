@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:gravity="bottom"
+
+        android:orientation="vertical"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+            android:id="@+id/viewone"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent" android:layout_height="100dp"
+          android:background="@color/yellow">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGO"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="@dimen/twoenty"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+                                           android:layout_height="match_parent"
+                                           app:layout_constraintTop_toBottomOf="@+id/viewone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+                                                           android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/addtocart"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginTop="@dimen/ten">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/shopnowicon"
+                    android:layout_width="@dimen/navigationimgsize"
+                    android:layout_height="@dimen/navigationimgsize"
+                    app:srcCompat="@drawable/addtocart"
+                    android:layout_gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/shopnowimgtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addtocart"
+                    android:fontFamily="@font/comfortaa_medium"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/ten"
+                    android:textColor="@color/textblack"
+                    android:textSize="@dimen/textsize_fourtn"
+                    app:layout_constraintStart_toEndOf="@+id/shopnowicon"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addtowishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginTop="@dimen/five">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/hearticon"
+                    android:layout_width="@dimen/navigationimgsize"
+                    android:layout_height="@dimen/navigationimgsize"
+                    app:srcCompat="@drawable/star_yellow_fill"
+                    android:layout_gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/wishlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wishlist"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/comfortaa_medium"
+                    android:layout_marginStart="@dimen/ten"
+                    android:textColor="@color/textblack"
+                    android:textSize="@dimen/textsize_fourtn"
+                    app:layout_constraintStart_toEndOf="@+id/shopnowicon"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginTop="@dimen/five">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/profileicon"
+                    android:layout_width="@dimen/navigationimgsize"
+                    android:layout_height="@dimen/navigationimgsize"
+                    app:srcCompat="@drawable/useryellow"
+                    android:layout_gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile"
+                    android:fontFamily="@font/comfortaa_medium"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/ten"
+                    android:textColor="@color/textblack"
+                    android:textSize="@dimen/textsize_fourtn"
+                    app:layout_constraintStart_toEndOf="@+id/shopnowicon"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/language"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginTop="@dimen/five">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/langicon"
+                    android:layout_width="@dimen/navigationimgsize"
+                    android:layout_height="@dimen/navigationimgsize"
+                    app:srcCompat="@drawable/language"
+                    android:layout_gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/language"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/ten"
+                    android:textColor="@color/textblack"
+                    android:fontFamily="@font/comfortaa_medium"
+
+                    android:textSize="@dimen/textsize_fourtn"
+                    app:layout_constraintStart_toEndOf="@+id/shopnowicon"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ten">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/producticon"
+                    android:layout_width="@dimen/navigationimgsize"
+                    android:layout_height="@dimen/navigationimgsize"
+                    app:srcCompat="@drawable/productyellow"
+                    android:layout_gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/product"
+                    android:paddingEnd="@dimen/twoenty"
+                    android:paddingTop="@dimen/halffive"
+                    android:paddingBottom="@dimen/halffive"
+                    android:fontFamily="@font/comfortaa_medium"
+
+                    android:textColor="@color/textblack"
+                    android:layout_marginStart="@dimen/ten"
+                    android:textSize="@dimen/textsize_fourtn"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    app:layout_constraintTop_toBottomOf="@+id/aboutus"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ordericon"
+                android:layout_width="@dimen/navigationimgsize"
+                android:layout_height="@dimen/navigationimgsize"
+                app:srcCompat="@drawable/order"
+                android:layout_gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order"
+                android:paddingEnd="@dimen/twoenty"
+                android:paddingTop="@dimen/halffive"
+                android:paddingBottom="@dimen/halffive"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textColor="@color/textblack"
+                android:layout_marginStart="@dimen/ten"
+                android:textSize="@dimen/textsize_fourtn"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/ten"
+                app:layout_constraintTop_toBottomOf="@+id/aboutus"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/contactusicon"
+                android:layout_width="@dimen/navigationimgsize"
+                android:layout_height="@dimen/navigationimgsize"
+                app:srcCompat="@drawable/contactus"
+                android:layout_gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/contactus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contactus"
+                    android:textColor="@color/textblack"
+                    android:layout_marginStart="@dimen/ten"
+                    android:textSize="@dimen/textsize_fourtn"
+                android:fontFamily="@font/comfortaa_medium"
+
+                android:paddingEnd="@dimen/twoenty"
+                    android:paddingTop="@dimen/halffive"
+                    android:paddingBottom="@dimen/halffive"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    app:layout_constraintStart_toStartOf="parent"
+            />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/howitworksicon"
+                android:layout_width="@dimen/navigationimgsize"
+                android:layout_height="@dimen/navigationimgsize"
+                app:srcCompat="@drawable/faq"
+                android:layout_gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/howitworks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/howitworks"
+                    android:textColor="@color/textblack"
+                    android:layout_marginStart="@dimen/ten"
+                    android:textSize="@dimen/textsize_fourtn"
+                    android:paddingEnd="@dimen/twoenty"
+                android:fontFamily="@font/comfortaa_medium"
+
+                android:paddingTop="@dimen/halffive"
+                    android:paddingBottom="@dimen/halffive"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    app:layout_constraintStart_toStartOf="parent"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/faqicon"
+                android:layout_width="@dimen/navigationimgsize"
+                android:layout_height="@dimen/navigationimgsize"
+                app:srcCompat="@drawable/faqtxt"
+                android:layout_gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/faq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq"
+                    android:textColor="@color/textblack"
+                    android:layout_marginStart="@dimen/ten"
+                    android:textSize="@dimen/textsize_fourtn"
+                    android:paddingEnd="@dimen/twoenty"
+                android:fontFamily="@font/comfortaa_medium"
+
+                android:paddingTop="@dimen/halffive"
+                    android:paddingBottom="@dimen/halffive"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    app:layout_constraintTop_toBottomOf="@+id/howitworks"
+                    app:layout_constraintStart_toStartOf="parent"
+            />
+        </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/disclaimerpolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:visibility="gone"
+                    android:textColor="@color/textblack"
+                    android:layout_marginStart="@dimen/ten"
+                    android:textSize="@dimen/textsize_fourtn"
+                    android:paddingEnd="@dimen/twoenty"
+                    android:paddingTop="@dimen/halffive"
+                    android:paddingBottom="@dimen/halffive"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    app:layout_constraintTop_toBottomOf="@+id/faq"
+                    app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+
+            <LinearLayout
+                android:id="@+id/aboutuslayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ten">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/aboutusicon"
+                    android:layout_width="@dimen/navigationimgsize"
+                    android:layout_height="@dimen/navigationimgsize"
+                    app:srcCompat="@drawable/logout"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/aboutus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/twoenty"
+                    android:paddingTop="@dimen/halffive"
+                    android:paddingBottom="@dimen/halffive"
+                    android:textColor="@color/textblack"
+                    android:text="@string/aboutus"
+                    android:layout_marginStart="@dimen/ten"
+                    android:fontFamily="@font/comfortaa_medium"
+                    android:textSize="@dimen/textsize_fourtn"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/logouticon"
+                android:layout_width="@dimen/navigationimgsize"
+                android:layout_height="@dimen/navigationimgsize"
+                app:srcCompat="@drawable/logout"
+                android:layout_gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/twoenty"
+                android:paddingTop="@dimen/halffive"
+                android:paddingBottom="@dimen/halffive"
+                android:textColor="@color/textblack"
+                android:layout_marginStart="@dimen/ten"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="@dimen/textsize_fourtn"
+                android:layout_marginTop="@dimen/ten"
+
+                android:layout_marginBottom="@dimen/ten"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+        </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
